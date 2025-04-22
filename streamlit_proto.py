@@ -3,20 +3,52 @@ from st_link_analysis import st_link_analysis, NodeStyle, EdgeStyle
 
 st.set_page_config(layout="wide")
 
+'''
+    {"Type": "Solar Uses", "Parent": "Solar"},
+    {"Type": "Rooftop Solar", "Parent": "Solar Uses"},
+    {"Type": "Covered(Parking) Solar", "Parent": "Solar Uses"},
+    {"Type": "Ground Mount Solar", "Parent": "Solar Uses"},
+    {"Type": "Consumer Home", "Parent": "Rooftop Solar Uses"},
+    {"Type": "Commercial", "Parent": "Rooftop Solar Uses"},
+    '''
+
 table_data = [
     {"Type": "Solar", "Parent": "Renewables", "Description": "Solar energy is harnessed from the sun's rays."},
     {"Type": "Wind", "Parent": "Renewables", "Description": "Wind energy is generated from the movement of air."},
     {"Type": "Geothermal", "Parent": "Renewables"},
     {"Type": "Hydropower", "Parent": "Renewables"},
-    {"Type": "Rooftop Solar", "Parent": "Solar"},
-    {"Type": "Covered(Parking) Solar", "Parent": "Solar"},
-    {"Type": "Ground Mount Solar", "Parent": "Solar"},
+
+    
+
     {"Type": "Field-Mounted Wind", "Parent": "Wind"},
     {"Type": "Offshore Wind", "Parent": "Wind"},
     {"Type": "Building-Mounted Wind", "Parent": "Wind"},
     {"Type": "Distributed Wind", "Parent": "Wind"},
-    {"Type": "Consumer Home", "Parent": "Rooftop Solar"},
-    {"Type": "Commercial", "Parent": "Rooftop Solar"},
+
+    
+
+    {"Type": "Photovoltaic Cells", "Parent": "Solar"},
+
+    {"Type": "Thin-Film Cells", "Parent": "Photovoltaic Cells"},
+    {"Type": "Cadmium Telluride (CdTe)", "Parent": "Thin-Film Cells"},
+    {"Type": "Copper Indium Gallium Selenide (CIGS)", "Parent": "Thin-Film Cells"},
+    {"Type": "Amorphous Silicon (a-Si)", "Parent": "Thin-Film Cells"},
+
+    {"Type": "Silicon-based Cells", "Parent": "Photovoltaic Cells"},
+    {"Type": "Monocrystalline Silicon", "Parent": "Silicon-based Cells"},
+    {"Type": "Polycrystalline Silicon", "Parent": "Silicon-based Cells"},
+    
+
+    {"Type": "Solar Module Components", "Parent": "Solar"},
+
+    {"Type": "Glass Cover", "Parent": "Solar Module Components"},
+    {"Type": "Encapsulants", "Parent": "Solar Module Components"},
+    {"Type": "Backsheet", "Parent": "Solar Module Components"},
+    {"Type": "Frame", "Parent": "Solar Module Components"},
+    {"Type": "Junction Box", "Parent": "Solar Module Components"},
+    {"Type": "Conductive Materials", "Parent": "Solar Module Components"},
+
+
 ]
 
 description_mapping = {
@@ -35,7 +67,24 @@ description_mapping = {
         "Distributed Wind": "Smaller wind turbines installed in various locations.",
         "Consumer Home": "Solar panels installed on individual homes.",
         "Commercial": "Solar panels installed on commercial buildings.",
-        "Consumer Home": "Solar panels installed on individual homes.",}
+        "Consumer Home": "Solar panels installed on individual homes.",
+        "Photovoltaic Cells": "Devices that convert sunlight directly into electricity.",
+        "Silicon-based Cells": "Photovoltaic cells made from silicon, the most common type.",
+        "Thin-Film Cells": "Photovoltaic cells made from thin layers of semiconductor materials.",
+        "Solar Module Components": "Components that make up solar modules, including cells and frames.",
+        "Cadmium Telluride (CdTe)": "A type of thin-film solar cell made from cadmium telluride.",
+        "Copper Indium Gallium Selenide (CIGS)": "A type of thin-film solar cell made from copper, indium, gallium, and selenium.",
+        "Amorphous Silicon (a-Si)": "A type of thin-film solar cell made from non-crystalline silicon.",
+        "Monocrystalline Silicon": "A type of silicon solar cell made from a single crystal structure.",
+        "Polycrystalline Silicon": "A type of silicon solar cell made from multiple crystal structures.",
+        "Glass Cover": "The protective glass layer on top of solar modules.",
+        "Encapsulants": "Materials that protect solar cells from moisture and mechanical damage.",
+        "Backsheet": "The rear protective layer of solar modules.",
+        "Frame": "The structural frame that holds the solar module together.",
+        "Junction Box": "The box that houses the electrical connections of a solar module.",
+        "Conductive Materials": "Materials that conduct electricity within solar modules.",
+
+        }
 
 
 node_names = set()
