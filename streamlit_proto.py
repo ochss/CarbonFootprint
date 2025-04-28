@@ -1,6 +1,4 @@
 import streamlit as st
-from pyvis.network import Network
-import networkx as nx
 from st_link_analysis import st_link_analysis, NodeStyle, EdgeStyle
 
 #Page title
