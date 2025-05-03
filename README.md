@@ -58,6 +58,7 @@ Refine edge labels to show more specific relationships.
 - Consider writing a "User Guide" to help future users explore the graphs effectively.
 
 ## Project Structure (Prototype)
+```
 carbon_footprint_app/
 ├── app.py (Streamlit frontend)
 ├── graphs/
@@ -66,6 +67,7 @@ carbon_footprint_app/
 │   └── deforestation_impacts.json
 ├── README.md (this document)
 └── requirements.txt (Streamlit and dependencies)
+```
 
 ## Closing Notes
 This project is intended to help data science students explore not just datasets, but structured relationships and causal pathways involved in carbon footprint estimation.
