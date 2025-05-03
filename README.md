@@ -17,6 +17,7 @@ The application was built using Streamlit, and organizes information into three 
 Each graph consists of:
 
 · Nodes: Entities such as processes (e.g., "Nuclear Fission"), materials (e.g., "U-238"), regions (e.g., "Amazon"), and impacts (e.g., "GHG Emissions").
+
 · Edges: Relationships between nodes (labeled mostly as RELATES currently), showing dependencies, causal chains, or conceptual associations.
 
 Each node includes:
@@ -31,36 +32,41 @@ Each node includes:
 · Streamlit: Web application framework
 · Cytoscape.js (likely via Streamlit components): Graph visualization
 · JSON: Format for graph node and edge data
+
 ## Known Limitations (for Future Development)
 · Many nodes lack detailed descriptions, which limits educational and research value.
 · Node typing is currently shallow (Source vs Child) and should be expanded to include semantic categories.
 · Edge labels are mostly generic (RELATES) and should be refined into meaningful relationship types (e.g., CAUSES, ENABLED_BY, EMITS).
 · Graph layouts could benefit from automatic arrangement (force-directed or DAG-like) for readability.
 · User interactivity is minimal (no click-based expansion, filtering, or tooltips yet).
+
 ## Recommendations for Handoff
 To ensure smooth continuation of the project, the next development team should consider:
+
 1. Enhance metadata
 Expand node descriptions.
-	Assign proper semantic types to nodes (e.g., Energy Source, Process, Impact).
+- Assign proper semantic types to nodes (e.g., Energy Source, Process, Impact).
 Refine edge labels to show more specific relationships.
 2. Improve visualization
-Apply automatic graph layouts for clarity.
-Add hover tooltips and/or clickable detailed views for nodes.
+- Apply automatic graph layouts for clarity.
+- Add hover tooltips and/or clickable detailed views for nodes.
 3. Expand knowledge coverage
-Add upstream/downstream supply chains for renewables (e.g., rare earth mining for wind turbines).
-Connect carbon footprint factors across graphs (e.g., deforestation's impact on energy access).
+- Add upstream/downstream supply chains for renewables (e.g., rare earth mining for wind turbines).
+- Connect carbon footprint factors across graphs (e.g., deforestation's impact on energy access).
 4. Prepare documentation
-Keep updating this README.
-Consider writing a "User Guide" to help future users explore the graphs effectively.
+- Keep updating this README.
+- Consider writing a "User Guide" to help future users explore the graphs effectively.
+
 ## Project Structure (Prototype)
 carbon_footprint_app/
 ├── app.py (Streamlit frontend)
 ├── graphs/
-│ ├── renewable_energy.json
-│ ├── nuclear_energy.json
-│ └── deforestation_impacts.json
+│   ├── renewable_energy.json
+│   ├── nuclear_energy.json
+│   └── deforestation_impacts.json
 ├── README.md (this document)
 └── requirements.txt (Streamlit and dependencies)
+
 ## Closing Notes
 This project is intended to help data science students explore not just datasets, but structured relationships and causal pathways involved in carbon footprint estimation.
 By building this as a modular knowledge graph system, it becomes possible to expand horizontally (more nodes) and vertically (more depth per node) over time, leading to a powerful educational and analytical tool.
