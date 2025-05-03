@@ -1,6 +1,6 @@
 # Carbon Footprint Knowledge Graph Application - README
 ## Overview
-This project is a prototype data product designed to support analysis of carbon footprint contributors through a knowledge graph-based exploration interface. The system models key relationships among energy production methods, environmental impacts, and carbon emissions sources.
+This project is a prototype data product designed to support analysis of carbon footprint contributors through a knowledge graph-based exploration interface. The system models key relationships among energy production methods, environmental impacts, and carbon emissions sources. Creation of this prototype was based on research influenced by En-ROADS, a free and interactive climate simulator that was developed by the MIT Sloan Sustainability Initiative and Climate Interactive. En-ROADS: https://en-roads.climateinteractive.org/scenario.html?v=25.4.0
 
 The application was built using Streamlit, and organizes information into three distinct knowledge graphs:
 
@@ -70,9 +70,11 @@ carbon_footprint_app/
 ```
 
 ## Closing Notes
-This project is intended to help data science students explore not just datasets, but structured relationships and causal pathways involved in carbon footprint estimation.
+This project is intended to help data science students explore not just datasets, but structured relationships and causal pathways involved in carbon footprint estimation. It also allows for the larger deconstruction of broader topics, allowing for easier calculation of the carbon footprint contribution at multiple levels.
 By building this as a modular knowledge graph system, it becomes possible to expand horizontally (more nodes) and vertically (more depth per node) over time, leading to a powerful educational and analytical tool.
-Known Issues and Challenges
-Make a list here with enough details to have the new team get started on right away.
+
+## Known Issues and Challenges
+- The application should be epanded upon to include more resources, carbon dioxide removal, and more. Consider if there are other optimal ways to demonstrate many more knowledge graphs within the same application.
+- Figuring out how to create a node hiearchy has caused the team some trouble. We can differentiate the central node and other nodes by color and size, but have not yet given it ordered structure.
 
 
