@@ -35,9 +35,13 @@ Each node includes:
 
 ## Known Limitations (for Future Development)
 · Many nodes lack detailed descriptions, which limits educational and research value.
+
 · Node typing is currently shallow (Source vs Child) and should be expanded to include semantic categories.
+
 · Edge labels are mostly generic (RELATES) and should be refined into meaningful relationship types (e.g., CAUSES, ENABLED_BY, EMITS).
+
 · Graph layouts could benefit from automatic arrangement (force-directed or DAG-like) for readability.
+
 · User interactivity is minimal (no click-based expansion, filtering, or tooltips yet).
 
 ## Recommendations for Handoff
