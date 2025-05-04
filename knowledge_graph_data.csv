@@ -1,0 +1,61 @@
+﻿Category,Type,Parent,Description,Node Type,Edge Type
+Renewables,Renewables,,Renewable energy sources are naturally replenished.,Domain,
+Renewables,Solar,Renewables,Solar energy is harnessed from the sun's rays.,Energy Source,Has Source
+Renewables,Wind,Renewables,Wind energy is generated from the movement of air.,Energy Source,Has Source
+Renewables,Geothermal,Renewables,Geothermal energy is derived from the heat stored beneath the Earth's surface.,Energy Source,Has Source
+Renewables,Hydropower,Renewables,Hydropower energy is generated from the flow of water in rivers and dams.,Energy Source,Has Source
+Renewables,Field-Mounted Wind,Wind,Wind turbines installed in open fields.,Installation Type,Has Installation Type
+Renewables,Offshore Wind,Wind,"Wind turbines installed in bodies of water, typically oceans.",Installation Type,Has Installation Type
+Renewables,Building-Mounted Wind,Wind,Wind turbines installed on buildings.,Installation Type,Has Installation Type
+Renewables,Distributed Wind,Wind,Smaller wind turbines installed in various locations.,Installation Type,Has Installation Type
+Renewables,Photovoltaic Cells,Solar,Devices that convert sunlight directly into electricity.,Technology,Uses Technology
+Renewables,Thin-Film Cells,Photovoltaic Cells,Photovoltaic cells made from thin layers of semiconductor materials.,Technology,Has Variant
+Renewables,Silicon-based Cells,Photovoltaic Cells,"Photovoltaic cells made from silicon, the most common type.",Technology,Has Variant
+Renewables,Cadmium Telluride (CdTe),Thin-Film Cells,A type of thin-film solar cell made from cadmium telluride.,Material,Made Of
+Renewables,Copper Indium Gallium Selenide (CIGS),Thin-Film Cells,"A type of thin-film solar cell made from copper, indium, gallium, and selenium.",Material,Made Of
+Renewables,Amorphous Silicon (a-Si),Thin-Film Cells,A type of thin-film solar cell made from non-crystalline silicon.,Material,Made Of
+Renewables,Monocrystalline Silicon,Silicon-based Cells,A type of silicon solar cell made from a single crystal structure.,Material,Made Of
+Renewables,Polycrystalline Silicon,Silicon-based Cells,A type of silicon solar cell made from multiple crystal structures.,Material,Made Of
+Renewables,Solar Module Components,Solar,"Components that make up solar modules, including cells and frames.",Component Group,Has Component Group
+Renewables,Glass Cover,Solar Module Components,The protective glass layer on top of solar modules.,Component,Has Component
+Renewables,Encapsulants,Solar Module Components,Materials that protect solar cells from moisture and mechanical damage.,Component,Has Component
+Renewables,Backsheet,Solar Module Components,The rear protective layer of solar modules.,Component,Has Component
+Renewables,Frame,Solar Module Components,The structural frame that holds the solar module together.,Component,Has Component
+Renewables,Junction Box,Solar Module Components,The box that houses the electrical connections of a solar module.,Component,Has Component
+Renewables,Conductive Materials,Solar Module Components,Materials that conduct electricity within solar modules.,Component,Has Component
+Nuclear Energy,Nuclear Energy,,Energy released from nuclear reactions dealing with the splitting of uranium or plutonium atoms inside of a nuclear reactor. Does not directly produce greenhouse gases.,Domain,
+Nuclear Energy,Nuclear Fission,Nuclear Energy,"Process of splitting fissile uranium-235 or plutonium-239 atoms by neutron bombardment. Releases heat and more neutrons, sustaining a chain reaction.",Process,Has Process
+Nuclear Energy,Nuclear Reactor,Nuclear Fission,Facility built to sustain and control nuclear chain reactions for energy generation.,Component,Has Component
+Nuclear Energy,Uranium-235,Nuclear Fission,Fissile isotope of uranium used as primary fuel in most reactors.,Material, 
+Nuclear Energy,U-238,Uranium-235,Most abundant natural uranium isotope; not fissile but breeds Pu-239 upon neutron capture.,Material,Has Material
+Nuclear Energy,Plutonium-239,Nuclear Fission,Fissile isotope produced in reactors when U-238 captures neutrons; also used as reactor fuel or weapons material.,Material,Has Material
+Nuclear Energy,Neptunium-239,Plutonium-239,Radioactive nuclide formed by beta decay of U-239; a precursor to Pu-239.,Material,Has Material
+Nuclear Energy,U-239,Neptunium-239,Unstable uranium isotope formed when U-238 captures a neutron; decays to Neptunium-239.,Material,Has Material
+Nuclear Energy,U-238,U-239,Most abundant natural uranium isotope; not fissile but breeds Pu-239 upon neutron capture.,Material,Has Material
+Nuclear Energy,Mining,U-238,Extraction of uranium ore from the earth.,Process,Has Process
+Nuclear Energy,Open-pit,Mining,Surface mining method where uranium ore is removed via large pits.,Process,Has Process
+Nuclear Energy,Underground,Mining,Subsurface mining involving tunnels to reach uranium ore.,Process,Has Process
+Nuclear Energy,In-situ leaching (ISL),Mining,Circulating a solvent underground to dissolve uranium and pumping it back to the surface.,Process,Has Process
+Nuclear Energy,Yellowcake (U3O8),U-238,Preliminary purified uranium oxide concentrate produced from mined ore.,Material,Has Material
+Nuclear Energy,UO₂ → UF₄ → UF₆,Yellowcake (U3O8),Chemical conversion sequence preparing uranium for enrichment.,Process,Has Process
+Nuclear Energy,Enrichment,UO₂ → UF₄ → UF₆,Process of increasing the proportion of U-235 in uranium.,Process,Has Process
+Nuclear Energy,Gas centrifuge,Enrichment,Enrichment method using high-speed rotors to separate isotopes based on mass.,Technology,Uses Technology
+Nuclear Energy,Gaseous diffusion,Enrichment,Older enrichment method forcing UFâ‚† gas through barriers to separate isotopes.,Technology,Uses Technology
+Nuclear Energy,Laser enrichment,Enrichment,Technique using tuned lasers to selectively ionize U-235 atoms for separation.,Technology,Uses Technology
+Nuclear Energy,Heat (Steam),Nuclear Fission,Thermal energy from fission used to generate steam.,Process,Has Process
+Nuclear Energy,Turbines,Heat (Steam),Machines spun by steam to produce mechanical energy.,Component,Has Component
+Nuclear Energy,Electricity,Turbines,Final electrical energy output from turbines.,Output,Produces Output
+Nuclear Energy,PUREX,Nuclear Fission,Chemical reprocessing method to separate uranium and plutonium from spent fuel.,Process,Has Process
+Nuclear Energy,Small Modular,Nuclear Reactor,"Smaller, compact versions of nuclear reactors that also produce less electricity. Emphasis on portability.",Component,Has Component
+Nuclear Energy,Pressurized Water,Nuclear Reactor,Most common kind of nuclear reactor. Uses two separate coolant loops.,Component,Has Component
+Nuclear Energy,Boiling Water,Nuclear Reactor,Kind of nuclear reactor that only has one main water system. This means the steam generated from the initial coolant system goes straight to the turbine. This can cause that steam to be radioactive as well.,Component,Has Component
+Nuclear Energy,Fast Breeder,Nuclear Reactor,Kind of nuclear reactor that specializes in producing more fissile material than it uses. Focus on converting U-238 to Pu-239. Produces energy and makes future fuel.,Component,Has Component
+Deforestation,Deforestation,,The process of clearing trees and forests.,Domain,
+Deforestation,Soil Degradation,Deforestation,"The deterioration of soil quality, structure, and fertility resulting from vegetation loss.",Subdomain,Has Subdomain
+Deforestation,Soil Erosion,Soil Degradation,"The removal of topsoil by wind, water, or other agents, leading to land degradation.",Impact,Has Impact
+Deforestation,Fertility Loss,Soil Degradation,"The reduction of essential nutrients in soil, diminishing its ability to support plant growth.",Impact,Has Impact
+Deforestation,Microbial Disruption,Soil Degradation,The disturbance or loss of soil microbial communities vital for nutrient cycling and soil health.,Impact,Has Impact
+Deforestation,Water Retention Loss,Soil Degradation,"The decrease in soil’s capacity to retain moisture, affecting plant water availability.",Impact,Has Impact
+Deforestation,Amazon Rainforest,Deforestation,"The largest tropical rainforest in South America, experiencing significant deforestation for agriculture and logging.",Affected Region,Has Affected Region
+Deforestation,Congo Basin,Deforestation,"The second-largest tropical rainforest in Central Africa, facing deforestation from logging, mining, and subsistence farming.",Affected Region,Has Affected Region
+Deforestation,Southeast Asia,Deforestation,"Tropical forest regions across Indonesia, Malaysia, and neighboring countries, heavily impacted by palm-oil plantations.",Affected Region,Has Affected Region

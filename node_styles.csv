@@ -1,0 +1,13 @@
+﻿type,color,caption
+Domain,#1f77b4,name
+Energy Source,#ff7f0e,name
+Installation Type,#2ca02c,name
+Technology,#d62728,name
+Material,#9467bd,name
+Component Group,#8c564b,name
+Component,#e377c2,name
+Process,#7f7f7f,name
+Output,#bcbd22,name
+Subdomain,#17becf,name
+Impact,#aec7e8,name
+Affected Region,#ffbb78,name

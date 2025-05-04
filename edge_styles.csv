@@ -1,0 +1,14 @@
+﻿type,caption,directed
+Has Affected Region,label,FALSE
+Has Component,label,FALSE
+Has Component Group,label,FALSE
+Has Impact,label,FALSE
+Has Installation Type,label,FALSE
+Has Material,label,FALSE
+Has Process,label,FALSE
+Has Source,label,FALSE
+Has Subdomain,label,FALSE
+Has Variant,label,FALSE
+Made Of,label,FALSE
+Produces Output,label,FALSE
+Uses Technology,label,FALSE
