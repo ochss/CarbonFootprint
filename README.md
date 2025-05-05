@@ -29,7 +29,9 @@ Each node includes:
 
 ## Technologies Used
 · Streamlit: Web application framework
+
 · st-link-analysis: built on Cytoscape.js, Graph visualization
+
 · CSV: Format for graph node and edge data
 
 ## Known Limitations (for Future Development)
